@@ -1,0 +1,10 @@
+Fonts:
+MathJax_SansSerif-Bold for logo
+Comic Sans MS for all what's left
+
+Colors:
+#F03830
+#830000
+#FF0000 (Red)
+#000000 (Black)
+#FFFFFF (White)
