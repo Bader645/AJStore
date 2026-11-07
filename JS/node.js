@@ -13,3 +13,14 @@ if (document.readyState === 'complete') {
 else (
     window.addEventListener('load', hideLoadingScreen)
 )
+
+document.getElementById("login-form").onsubmit = function() {
+    let passwordValue = document.getElementById("password").value
+    let passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(?![\\\(\)\{\}])\W).{8,}$/
+
+    if (!passwordCheck.test(passwordValue)) {
+        console.log("Password does not meet the requirements.")
+        return false
+    }
+    return true
+}
