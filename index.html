@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJ Store</title>
     <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
     <style>
         html {
             overflow: hidden;
@@ -30,7 +31,10 @@
         <p id="store-quote">where we turn your dream designs into reality</p>
         <form action="" method="post" id="login-form">
             <input type="text" spellcheck="false" autocomplete="username" required name="username" id="username" placeholder="User Name">
-            <input type="password" spellcheck="false" autocomplete="current-password" required name="password" id="password" placeholder="Password">
+            <div class="password-container">
+                <input style="width: 100%;" type="password" spellcheck="false" autocomplete="current-password" required name="password" id="password" placeholder="Password">
+                <i class="eye-icon fa-regular fa-eye"></i>
+            </div>
             <input type="submit" value="SIGN IN" id="sign-in">
         </form>
         <a href="https://www.google.com" id="forgot-password">forgot your password?</a>

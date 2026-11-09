@@ -109,9 +109,31 @@ a {
     color: white;
     font-size: 1em;
 }
+.password-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    transition: .5s ease .02s;
+}
 @media (min-width: 1200px) {
     #main-container form input {
         width: 60%;
+    }
+    .password-container {
+        width: 60%;
+    }
+}
+.eye-icon {
+    position: absolute;
+    right: 22%;
+    transform: translateY(-8px);
+    color: white;
+    cursor: pointer;
+    transition: .5s ease .02s;
+}
+@media (max-width: 1199px) {
+    .eye-icon {
+        right: 17%;
     }
 }
 #main-container form input::placeholder {
