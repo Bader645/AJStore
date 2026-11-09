@@ -40,6 +40,7 @@ a {
     align-items: center;
     padding-bottom: 2vh;
     opacity: .9;
+    margin: 0 auto;
 }
 #main-container::before {
     content: "";
@@ -63,9 +64,10 @@ a {
 }
 @media (max-width: 480px) {
     #main-container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 98%;
+    }
+    #main-container::before {
+        transform: translateX(-2px);
     }
 }
 #store-welcome {
@@ -120,8 +122,14 @@ a {
 .password-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 70%;
     transition: .5s ease .02s;
+    position: relative;
+}
+.password-container .eye-icon {
+    opacity: 0;
+    transition: .15s;
 }
 @media (min-width: 1200px) {
     #main-container form input {
@@ -133,7 +141,7 @@ a {
 }
 .eye-icon {
     position: absolute;
-    right: 22%;
+    right: 4%;
     transform: translateY(-8px);
     color: white;
     cursor: pointer;
@@ -141,7 +149,7 @@ a {
 }
 @media (max-width: 1199px) {
     .eye-icon {
-        right: 17%;
+        right: 4%;
     }
 }
 #main-container form input::placeholder {

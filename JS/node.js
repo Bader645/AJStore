@@ -24,10 +24,18 @@ document.getElementById("login-form").onsubmit = function() {
     }
     return true
 }
-
-document.getElementsByClassName("eye-icon")[0].addEventListener("click", function() {
+let eyeButton = document.getElementsByClassName("eye-icon")[0]
+eyeButton.addEventListener("click", function() {
     let passwordField = document.getElementById("password")
     passwordField.type = passwordField.type === "password" ? "text" : "password"
     this.classList.toggle("fa-eye-slash");
     passwordField.focus()
+})
+
+document.getElementById("password").addEventListener('focus', function() {
+    eyeButton.style.opacity = "1"
+})
+
+document.getElementById("password").addEventListener('blur', function() {
+    eyeButton.style.opacity = "0"
 })
