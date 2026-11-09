@@ -64,12 +64,9 @@ a {
         width: 55%
     }
 }
-@media (max-width: 440px) {
+@media (max-width: 480px) {
     #main-container {
-        width: 100%
-    }
-    #main-container::before {
-        border-radius: 10px;
+        width: 98%
     }
 }
 #store-welcome {
@@ -175,11 +172,21 @@ a {
     cursor: pointer;
     user-select: none;
 }
-.breaker {
-    width: 60%;
-    height: 100px;
-    background-color: black;
-    margin-top: 3vh;
+.google-buton-wrapper {
+    width: 40%;
+    margin-top: 2vh;
+    font-weight: bold;
+    transition: .5s ease .02s;
+}
+@media (max-width: 1199px) {
+    .google-buton-wrapper {
+        width: 50%;
+    }
+}
+@media (max-width: 991px) {
+    .google-buton-wrapper {
+        width: 60%;
+    }
 }
 #about-us {
     margin-top: 3vh;

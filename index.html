@@ -21,6 +21,7 @@
     </style>
 </head>
 <body>
+        <script src="https://accounts.google.com/gsi/client" async></script>
     <div id="loading-screen">
         <video loop autoplay muted playsinline>
             <source src="Videos/loading-screen.mp4" type="video/mp4">
@@ -38,7 +39,22 @@
             <input type="submit" value="SIGN IN" id="sign-in">
         </form>
         <a href="https://www.google.com" id="forgot-password">forgot your password?</a>
-        <span class="breaker"></span>
+        <div id="g_id_onload"
+            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+            data-login_uri="https://your.domain/your_login_endpoint"
+            data-auto_prompt="false">
+        </div>
+        <div class="google-buton-wrapper">
+            <div class="g_id_signin"
+            data-type="standard"
+            data-size="large"
+            data-width="400px"
+            data-theme="outline"
+            data-text="sign_in_with"
+            data-shape="pill"
+            data-logo_alignment="left">
+        </div>
+        </div>
         <a href="https://www.google.com" id="about-us">about us</a>
         <span id="rights">all rights reserved</span>
         <script src="JS/node.js"></script>
