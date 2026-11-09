@@ -60,6 +60,14 @@ a {
         width: 55%
     }
 }
+@media (max-width: 440px) {
+    #main-container {
+        width: 100%
+    }
+    #main-container::before {
+        border-radius: 10px;
+    }
+}
 #store-welcome {
     margin: 3vh auto 1vh;
     width: fit-content;
