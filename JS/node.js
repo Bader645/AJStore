@@ -16,7 +16,7 @@ else (
 
 document.getElementById("login-form").onsubmit = function() {
     let passwordValue = document.getElementById("password").value
-    let passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(?![\\\(\)\{\}])\W).{8,}$/
+    let passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W)(?!.*[\\(){}\s]).{8,}$/
 
     if (!passwordCheck.test(passwordValue)) {
         console.log("Password does not meet the requirements.")
